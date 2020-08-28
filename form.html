@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(background1.jpg);
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+            margin-bottom: 200px;;
+        }
+        .regform{
+            width: 800px;
+            background-color: rgba(0, 0, 0,0.6);
+            margin: auto;
+            color: #ffffff;
+            padding: -15px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 15px 15px;
+        }
+        .main{
+            background-color: rgb(0,0,0,0.2);
+            width: 800px;
+            margin:auto;
+            border-radius: 15px 15px 15px 15px;
+        }
+        form{
+            text-align:left;
+            padding-left:90px;
+            padding-top: 30px;
+        }
+        #name{
+            width:100%;
+            height:10px;
+        }
+        .name{
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .firstname{
+            position: relative;
+            height: 24px;
+            border-radius: 12px;
+            top:-8px;
+            padding:0px 70px 0px 0px;
+            font-size: 14px;
+        }
+        .lastname{
+            position: relative;
+            height: 24px;
+            border-radius: 12px;
+            top:-8px;
+            padding:0px 70px 0px 0px;
+            font-size: 14px;
+        }
+        .streetAddress{
+            position: relative;
+            border-radius: 12px;
+            width:600px;
+            height:24px;
+            font-size: 14px;
+        }
+        .streetaddress2{
+            position: relative;
+            border-radius: 12px;
+            width:600px;
+            height:24px;
+            font-size: 14px;
+        }
+        .city{
+            position: relative;
+            border-radius: 12px;
+            width:350px;
+            height:24px;
+            font-size: 14px;
+        }
+        .state{
+            position: relative;
+            border-radius: 12px;
+            width:200px;
+            height:24px;
+            font-size: 14px;
+        }
+        .postal{
+            position: relative;
+            border-radius: 12px;
+            width:200px;
+            height:24px;
+            font-size: 14px;
+        }
+        .country{
+            position: relative;
+            border-radius: 12px;
+            width:200px;
+            height:24px;
+            font-size: 14px;
+            
+        }
+        .phonenumber{
+            position: relative;
+            padding-right:20px;
+            border-radius: 12px;
+            width:200px;
+            height:24px;
+            font-size: 14px;
+        }
+        .email{
+            position: relative;
+            padding-right:20px;
+            border-radius: 12px;
+            width:600px;
+            height:24px;
+            font-size: 16px;
+        }
+        /*Area of Interest*/
+        .aoi{
+            position: relative;
+            padding-right:25px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        .skill-level{
+            position: relative;
+            padding-right:20px;
+            border-radius: 12px;
+            width:200px;
+            height:24px;
+            font-size: 16px;
+        }
+        h1{
+            background-color: rgba(0, 0, 0,0.6);
+            margin:0;
+            padding: 10px 0px 10px 0px;
+            border-radius: 15px 15px 0px 0px;
+        }
+        </style>
+</head>
+<body>
+    <div class="regform">
+        <!--form block-->  
+     <h1>Resume Filling</h1>
+     <!--heading-->
+        <div class="main"> 
+             <!--form filling block-->
+             <form action="post.php" method="POST">
+                
+                <div class="name"> 
+                    <!--name block-->
+                <h2>Full Name: *
+                <input type="text" class="firstname" name="First_Name">
+                <input type="text" class="lastname" name="Last_Name">
+                </h2>
+                </div>
+
+                <div class="address">
+                    <!--address block start-->
+                    <h2>Address: *</h2>
+                        <input type="text" class="streetAddress" name="Street_Address">
+                </div>
+                <div class="streetadress1">
+                <h4>Street Address <br>
+                        <input type="text" class="streetaddress2" name="Street_Address_Line_2"> <br>
+                Street Address Line 2 <br>
+                        <input type="text" class="city" name="City"> <br>
+                City <br>
+                        <input type="text" class="state" name="State_Province"> <br>
+                        State / Province <br>
+                        <input type="text" class="postal" name="Postal_Zip_Code"> <br>
+                        Postal / Zip Code <br>
+                        <select name="country" class="country">
+                            <option value="Select Option">--Select Country</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="India">India</option>
+                            <option value="China">China</option>
+                            <option value="United States of America">United States of America</option>
+                        </select><br>
+                        Country
+                    </h4>
+                    </div>
+                    <!--address block ends-->
+
+                    <div class="phone">
+                        <!--phone block-->
+                    <h3>
+                        Phone: * <br>
+                        <input type="text" class="phonenumber" name="Phone_Number"><br>
+                        </h3>
+                    </div>
+                    
+                    <div class="email">
+                        <!--email block-->
+                        <h3>E-mail: *<br>
+                      <input type="text" class="email" name="E-mail"><br>
+                    </h3>
+                   </div>
+
+                   <div class="aoi">
+                       <!--interest block--> <br><br>
+                       <h3>Area of Interest: </h3><h4>
+                       <input type="checkbox" name="Data Analyzer"> Data Analyzer <br>
+                       <input type="checkbox" name="Coding"> Coding <br>
+                       <input type="checkbox" name="Software_Testing"> Software Testing <br>
+                       <input type="checkbox" name="Human_Resources"> Human Resource <br> 
+                       <input type="checkbox" name="Account_Manager"> Account Manager <br>
+                       <input type="checkbox" name="Sales"> Sales
+                    </h4>
+                   </div>
+
+                   <div class="skill-level">
+                       <!--skill-select option block-->
+                       <h3>
+                           Skill Level: *<br>
+                           <select name="skill-level"><br>
+                               <option value="select">--Select Option</option>
+                               <option value="beginner">Beginner</option>
+                               <option value="intermediate">Intermediate</option>
+                               <option value="expert">Expert</option>
+                               <option value="student">Student</option>
+                               <option value="freelancer">Freelancer</option>
+                           </select>
+                       </h3>
+                   </div>
+                   
+                    <div class="image"><br><br>
+                        <!--input image-->
+                        <h3>Resume:</h3>
+                            <input type="file" name="resume">
+                    </div>
+
+                    <div class="submit"> <br>
+                    <input type="submit" class="submit" name="Submit">
+                    <br><br><br>
+                    <!--submit button-->
+                </div>
+             </form>
+            </div>
+        </div>
+</body>
+</html>
