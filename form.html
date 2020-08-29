@@ -107,7 +107,6 @@
         }
         .phonenumber{
             position: relative;
-            padding-right:20px;
             border-radius: 12px;
             width:200px;
             height:24px;
@@ -126,7 +125,7 @@
             position: relative;
             padding-right:25px;
             border-radius: 12px;
-            font-size: 12px;
+            font-size: 16px;
         }
         .skill-level{
             position: relative;
@@ -134,13 +133,23 @@
             border-radius: 12px;
             width:200px;
             height:24px;
-            font-size: 16px;
         }
         h1{
             background-color: rgba(0, 0, 0,0.6);
             margin:0;
             padding: 10px 0px 10px 0px;
             border-radius: 15px 15px 0px 0px;
+        }
+        .submit{
+            width:15%;
+            text-align: center;
+            margin-left:250px;
+            background-color: #24a0ed;
+            color:white;
+            border-radius: 6px;
+            padding: 5px 8px 5px 8px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         </style>
 </head>
@@ -166,6 +175,7 @@
                     <h2>Address: *</h2>
                         <input type="text" class="streetAddress" name="Street_Address">
                 </div>
+                
                 <div class="streetadress1">
                 <h4>Street Address <br>
                         <input type="text" class="streetaddress2" name="Street_Address_Line_2"> <br>
@@ -220,7 +230,7 @@
                        <!--skill-select option block-->
                        <h3>
                            Skill Level: *<br>
-                           <select name="skill-level"><br>
+                           <select name="skill-level" class="skill-level"><br>
                                <option value="select">--Select Option</option>
                                <option value="beginner">Beginner</option>
                                <option value="intermediate">Intermediate</option>
@@ -237,7 +247,7 @@
                             <input type="file" name="resume">
                     </div>
 
-                    <div class="submit"> <br>
+                    <div> <br>
                     <input type="submit" class="submit" name="Submit">
                     <br><br><br>
                     <!--submit button-->
