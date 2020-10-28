@@ -178,6 +178,53 @@
     box-shadow: 1px 0px 1px 4px rgba(247, 243,243,0.9);
     transform: scale(1.1);
 }
+      /**************End of Product Section**************/
+
+/* About Section */
+
+#about-sec{
+    margin-top: 25px;
+
+}
+.text-color{
+    color: #000;
+}
+.watch.img{
+    margin-top: 35px;
+}
+
+.watch-img{
+    animation-name: imgLeft;
+    animation-duration: 3s;
+}
+.about-text{
+    animation-name: textRight;
+    animation-duration: 3s;
+}
+@keyframes imgLeft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+@keyframes textRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* End of About section */
     
     </style>
   </head>
@@ -490,6 +537,25 @@
 
 
     <!-- End of Featured Products -->
+  <!-- About Section -->
+    <div id="about-sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 text-center">
+                <img src="/images/mob4.jpg" alt="Mobile" width="450" height="150"
+                class="img-fluid watch-img">
+            </div>
+            <div class="col-lg-7 text-lg-right text-center text-color about-text">
+                <h1>About Company</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis tenetur temporibus vitae rem officia, ullam laboriosam quam enim velit maxime.
+                    Recusandae repellendus libero officia earum soluta ab aspernatur corrupti tempora!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End of About Section -->
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://kit.fontawesome.com/4794ee1906.js" crossorigin="anonymous"></script>
 
